@@ -40,7 +40,7 @@ def im2col_mean_removal(InImg, patchsize=[7, 7], stride=[1, 1], remove_mean=True
 
 def PCA_output(InImg, InImgIdx, patchsize, NumFilters, V):
     ImgZ = len(InImg)
-    mag = (patchsize - 1) / 2
+    mag = (patchsize - 1) // 2
     OutImg = []
     cnt = 0
 
